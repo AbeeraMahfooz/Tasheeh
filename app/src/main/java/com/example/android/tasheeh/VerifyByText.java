@@ -12,13 +12,14 @@ import android.widget.ListView;
 import android.widget.TextView;
 import android.widget.Toast;
 
+import java.io.Serializable;
 import java.text.BreakIterator;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
-public class VerifyByText extends AppCompatActivity {
+public class VerifyByText extends AppCompatActivity implements Serializable {
 
     String ayah;
     String keys;
@@ -27,8 +28,6 @@ public class VerifyByText extends AppCompatActivity {
     Button button;
     ArrayList<String> listOfWords;
 
-    ArrayList<String> matched = new ArrayList<String>();
-    int counter = 0;
     boolean flag = true;
 
 
@@ -41,6 +40,9 @@ public class VerifyByText extends AppCompatActivity {
         ayahtext = (EditText) findViewById(R.id.editInput);
         keywords = (EditText) findViewById(R.id.editInput2);
         button = (Button) findViewById(R.id.button1);
+
+        String strings = (String) getIntent().getSerializableExtra("string");
+        ayahtext.setText(strings);
 
         button.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -74,9 +76,9 @@ public class VerifyByText extends AppCompatActivity {
                 }
                 if (flag) {
 
-                    Intent i = new Intent(VerifyByText.this, FetchingData.class);
-                    i.putExtra("key", listOfWords);
-                    startActivity(i);
+                    Intent m = new Intent(VerifyByText.this, FetchingData.class);
+                    m.putExtra("key", listOfWords);
+                    startActivity(m);
                     finish();
 
                 }

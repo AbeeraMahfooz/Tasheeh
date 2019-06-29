@@ -98,6 +98,7 @@
             android:orientation="vertical">
 
             <Button
+                android:id="@+id/audio"
                 android:layout_width="35dp"
                 android:layout_height="60dp"
                 android:layout_margin="20dp"

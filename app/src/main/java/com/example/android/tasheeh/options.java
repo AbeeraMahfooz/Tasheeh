@@ -22,5 +22,14 @@ public class options extends AppCompatActivity {
             }
     });
 
+        Button button2 = (Button) findViewById(R.id.audio);
+        button2.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent i = new Intent(options.this,VerifyBySpeech.class);
+                startActivity(i);
+            }
+        });
+
 }
 }

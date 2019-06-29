@@ -132,7 +132,9 @@ public class FetchingData extends AppCompatActivity {
                 startActivity(cartIntent);
                 finish();
             }
-            else Toast.makeText(FetchingData.this, "NO MATCH FOUND", Toast.LENGTH_SHORT).show();
+            else {Toast.makeText(FetchingData.this, "NO MATCH FOUND", Toast.LENGTH_SHORT).show();
+            finish();}
+
 
         }
     }
