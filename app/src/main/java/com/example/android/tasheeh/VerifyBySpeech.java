@@ -41,7 +41,7 @@ public class VerifyBySpeech extends AppCompatActivity {
                 if (resultCode == RESULT_OK && data != null) {
                     ArrayList<String> result = data.getStringArrayListExtra(RecognizerIntent.EXTRA_RESULTS);
                     String strings = result.get(0);
-                    strings = strings.substring(1, strings.length() - 1);
+                    //strings = strings.substring(1, strings.length() - 1);
                     Intent i = new Intent(VerifyBySpeech.this, VerifyByText.class);
                     i.putExtra("string",strings);
                     startActivity(i);

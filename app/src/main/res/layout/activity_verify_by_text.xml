@@ -18,7 +18,12 @@
         android:textSize="35dp"
         android:textStyle="bold" />
 
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
     <LinearLayout
+        android:paddingTop="15dp"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:layout_gravity="center"
@@ -68,4 +73,5 @@
             android:theme="@style/myButtonTheme" />
 
     </LinearLayout>
+    </ScrollView>
 </LinearLayout>
