@@ -16,7 +16,7 @@
         android:padding="35dp"
         android:textSize="35dp"
         android:text="Enter your Ayah"
-
+        android:textColor="@color/colorPrimaryDark"
         android:textStyle="bold" />
 
     <LinearLayout
@@ -48,6 +48,7 @@
             android:paddingTop="25dp"
             android:layout_height="wrap_content"
             android:layout_gravity="center|bottom"
+            android:textStyle="bold"
             android:layout_marginTop="40dp"
             android:text="Verify" />
 

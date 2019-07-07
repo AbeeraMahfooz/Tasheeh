@@ -15,6 +15,7 @@
         android:layout_gravity="center"
         android:padding="35dp"
         android:text="Enter your Ayah"
+        android:textColor="@color/colorPrimaryDark"
         android:textSize="35dp"
         android:textStyle="bold" />
 
@@ -38,6 +39,7 @@
             android:layout_centerInParent="true"
             android:background="#ffff"
             android:hint="Enter Your Ayah Here"
+            android:paddingTop="20dp"
             android:inputType="textMultiLine|textAutoComplete"
             android:padding="15dp" />
 

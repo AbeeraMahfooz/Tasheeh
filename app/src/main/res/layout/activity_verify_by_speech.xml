@@ -14,10 +14,10 @@
         android:layout_alignParentTop="true"
         android:layout_centerHorizontal="true"
         android:layout_marginTop="100dp"
-        android:textColor="#000"
         android:textSize="26sp"
         android:textStyle="bold"
-        android:hint="Press the mic icon and speak"/>
+        android:textColor="@color/colorPrimaryDark"
+        android:text="Tap the mic icon and speak"/>
 
     <ImageView
         android:id="@+id/btnSpeak"
